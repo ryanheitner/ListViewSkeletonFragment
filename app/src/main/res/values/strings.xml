@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Twitch.Tv Client</string>
+    <string name="app_name">ListViewSkeleton</string>
     <string name="newtext">New</string>
+    <string name="details">lorus ipsum quantas saa</string>
 
     <plurals name="viewers">
         <item quantity="zero">%d Viewers</item>

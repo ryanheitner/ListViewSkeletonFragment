@@ -1,4 +1,4 @@
-package rh.twitchtvclient.views;
+package rh.listViewSkeleton.views;
 
 import android.content.Context;
 import android.util.AttributeSet;

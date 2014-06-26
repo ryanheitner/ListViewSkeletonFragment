@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TwitchTvClient2.iml" filepath="$PROJECT_DIR$/TwitchTvClient2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListViewSkeleton.iml" filepath="$PROJECT_DIR$/ListViewSkeleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyListViewSkeleton.iml" filepath="$PROJECT_DIR$/MyListViewSkeleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyListViewSkeletonFragment.iml" filepath="$PROJECT_DIR$/MyListViewSkeletonFragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
