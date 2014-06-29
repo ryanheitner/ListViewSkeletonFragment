@@ -43,10 +43,9 @@ public class DetailFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onResume() {
+        super.onResume();
         BaseApplication.getEventBus().register(this);
-        Log.e("Test", "hello");
     }
 
     @Override

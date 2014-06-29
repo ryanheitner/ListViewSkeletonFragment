@@ -80,8 +80,7 @@ public class MyListFragment extends ListFragment {
         setListAdapter(mAdapter);
 
         getListView().setOnScrollListener(mScrollListener);
-//        // test OK HTTP
-        BaseApplication.getEventBus().register(this);
+
 
         setListAdapter(mAdapter);
 
@@ -90,7 +89,6 @@ public class MyListFragment extends ListFragment {
                          See the Location and Locations object this was generated with jsonschema2pojo
 */
 
-        BaseApplication.getEventBus().register(this);
         new BackgroundWebRunner().execute("http://aws.site50.net/locations.json");
 
     }
@@ -124,7 +122,12 @@ public class MyListFragment extends ListFragment {
     public void onPause() {
         super.onPause();
         // Always unregister when an object no longer should be on the bus.
-        BaseApplication.getEventBus().unregister(this);
+        try {
+            BaseApplication.getEventBus().unregister(this);
+        } catch (Exception e) {
+
+        }
+
     }
 
 
@@ -143,6 +146,8 @@ public class MyListFragment extends ListFragment {
         if (mainActivity.mState.getNextPage() == 0) {
             downloadData(mainActivity.mState.getNextPage());
         }
+        //        // test OK HTTP
+        BaseApplication.getEventBus().register(this);
     }
 
 

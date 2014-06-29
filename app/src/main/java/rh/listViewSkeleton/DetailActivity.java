@@ -28,7 +28,7 @@ public class DetailActivity extends FragmentActivity  {
             finish();
             return;
         }
-        setContentView(R.layout.detail);
+        setContentView(R.layout.activity_detail);
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
              contributor = extras.getParcelable(CONTRIBUTOR);

@@ -57,6 +57,11 @@ public class MainActivity extends FragmentActivity implements MyListFragment.Dow
         if (getLastCustomNonConfigurationInstance() instanceof ActivityState) {
             mState = (ActivityState) getLastCustomNonConfigurationInstance();
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         BaseApplication.getEventBus().register(this);
     }
 
